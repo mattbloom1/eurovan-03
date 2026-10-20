@@ -1,0 +1,110 @@
+/* =========================================================================
+   Brand bridge — maps Reseller Ledger's own variable names onto the shared
+   brand tokens (the `brand` package: github.com/mattbloom1/Brand, built from its DESIGN.md).
+
+   Do NOT put colour values here.  Re-point a name at a different brand token
+   if a role needs to change; change the colour itself in brand/DESIGN.md.
+   ========================================================================= */
+@import 'brand/tokens.css';
+
+:root {
+  /* Surfaces */
+  --paper:        var(--color-background);
+  --paper-raised: var(--color-surface);
+  --paper-sunk:   var(--color-surface-sunk);
+  --paper-tint:   var(--color-surface-raised);
+  --paper-hover:  var(--color-surface-raised);
+  --rule:         var(--color-border);
+  --rule-strong:  var(--color-border-strong);
+  --rule-hover:   var(--color-border-hover);
+
+  /* Ink */
+  --ink:          var(--color-text);
+  --ink-soft:     var(--color-text-muted);
+  --ink-faint:    var(--color-text-faint);
+  --ink-inverse:  var(--color-text-inverse);
+
+  /* Masthead */
+  --masthead:      var(--color-surface-sunk);
+  --masthead-rule: var(--color-border);
+  --masthead-mark: var(--color-text);
+  --masthead-ink:  var(--color-text-muted);
+  --masthead-link: var(--color-text);
+
+  /* Brand (primary = Ash) */
+  --brand:        var(--color-primary);
+  --brand-deep:   var(--color-primary-hover);   /* link / active text: must stay light on dark */
+  --brand-soft:   var(--color-primary-soft);
+  --brand-rule:   var(--color-primary-rule);
+  --brand-hover:  var(--color-primary-hover);
+  --brand-glow:   color-mix(in srgb, var(--color-primary) 28%, transparent);
+
+  /* State */
+  --ok:           var(--color-success);
+  --ok-soft:      var(--color-success-soft);
+  --ok-rule:      var(--color-success-rule);
+  --warn:         var(--color-warning);
+  --warn-soft:    var(--color-warning-soft);
+  --warn-rule:    var(--color-warning-rule);
+  --warn-wash:    var(--component-alert-warning-background);
+  --alert:        var(--color-danger);
+  --alert-soft:   var(--color-danger-soft);
+  --alert-rule:   var(--color-danger-rule);
+  --alert-wash:   var(--component-alert-danger-background);
+  --danger-rule:  var(--color-danger-rule);
+  --clay:         var(--color-warning);
+  --clay-soft:    var(--color-warning-soft);
+  --clay-rule:    var(--color-warning-rule);
+  --slate:        var(--color-info);
+
+  /* Charts */
+  --chart-in:       var(--color-success);
+  --chart-in-wash:  color-mix(in srgb, var(--color-success) 16%, transparent);
+  --chart-out:      var(--color-warning);
+  --chart-out-wash: color-mix(in srgb, var(--color-warning) 16%, transparent);
+  --chart-loss:     var(--color-danger);
+  --chart-track:    var(--color-surface-sunk);
+  --chart-grid:     var(--color-border);
+
+  /* Inventory stages: an ordered ramp, dim to bright */
+  --stage-arriving: var(--color-border-strong);
+  --stage-inhand:   var(--color-border-hover);
+  --stage-listed:   var(--color-primary);
+  --stage-sold:     var(--color-info);
+
+  /* Shape, rhythm and depth */
+  --radius-sm:    var(--rounded-sm);
+  --radius-input: var(--rounded-md);
+  --radius:       var(--rounded-lg);
+  --radius-lg:    var(--rounded-xl);
+  --radius-pill:  var(--rounded-pill);
+  --unit:         var(--spacing-unit);
+
+  --scrim:          var(--color-scrim);
+  --shadow:         var(--shadow-card);
+  --shadow-hairline: var(--shadow-card);
+  --shadow-key:     var(--shadow-raised);
+  --shadow-drawer:  var(--shadow-overlay);
+
+  /* Type: families and sizes come from the brand tokens; ledger names kept. */
+  --sans:  var(--font-body);
+  --serif: var(--font-heading);
+  --mono:  var(--font-mono);
+
+  --text-root:        16px;
+  --text-root-mobile: 16px;
+  --text-2xs:  var(--type-p3-size);
+  --text-xs:   var(--type-p3-size);
+  --text-sm:   var(--type-p3-size);
+  --text-md:   var(--type-p2-size);
+  --text-lg:   var(--type-p1-size);
+  --text-xl:   var(--type-h3-size);
+  --text-2xl:  var(--type-h2-size);
+  --display-sm: var(--type-h2-size);
+  --display:   var(--type-h1-size);
+
+  --weight-normal:   400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+}
