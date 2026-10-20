@@ -7,7 +7,7 @@
    into a floating card.
 
    ── TWEAKING THIS FILE ──────────────────────────────────────────────────
-   Colour and shadow come from the shared brand file (DESIGN.md in the Brand repo) through
+   Colour and shadow come from the brand tokens (src/brand/tokens.css) through
    brand-bridge.css.  Type, rounding and spacing live in the `:root` block below.  Nothing further down hard-codes a colour, a radius
    or a font size — change a token here and it moves everywhere at once.
 
@@ -17,7 +17,7 @@
 
 :root {
   /* Colours and shadows are NOT defined here: they come from the shared
-     brand tokens via brand-bridge.css (edit DESIGN.md in the Brand repo, then `npm run brand:update`). */
+     brand tokens via brand-bridge.css (tokens live in src/brand/tokens.css). */
   --display-hero:   clamp(2rem, 4vw, 2.75rem);   /* cash position and profit */
 }
 

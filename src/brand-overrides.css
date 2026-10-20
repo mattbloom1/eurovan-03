@@ -1,14 +1,14 @@
 /* =========================================================================
-   Ledger-only tuning of the shared brand.
+   App-only tuning of the brand tokens.
 
    Loaded LAST (see main.tsx), so anything set here wins over the brand
    tokens in brand-bridge.css. Changes here affect this app only, and
-   `npm run brand:update` never touches this file.
+   Edit src/brand/tokens.css only when the brand itself changes.
 
    How to use:
    - Uncomment a line and change its value to tune it for the ledger.
-   - Delete or re-comment a line to go back to the shared brand value.
-   - Names follow DESIGN.md: colors.primary -> --color-primary,
+   - Delete or re-comment a line to go back to the brand value.
+   - Names follow the token names: colors.primary -> --color-primary,
      typography.h1 -> --type-h1-*, rounded.md -> --rounded-md, and so on.
      Component tokens (--component-*) live in
      src/brand/tokens.css and work the same way.
@@ -17,7 +17,7 @@
    ========================================================================= */
 
 :root {
-  /* --- Colors (DESIGN.md: colors) ------------------------------------- */
+  /* --- Colors (colors) ------------------------------------- */
   /* --color-background:      #131212; */
   /* --color-cream:           #F0EADA; */
   /* --color-surface-sunk:    #1e1a1a; */
@@ -49,14 +49,14 @@
   /* --color-warning-soft:    #3A3125; */
   /* --color-warning-rule:    #74603A; */
 
-  /* --- Fonts (DESIGN.md: fonts) --------------------------------------- */
+  /* --- Fonts (fonts) --------------------------------------- */
   /* Changing a family only works if its font files are also imported in main.tsx. */
   /* --font-heading:    'Instrument Serif', Georgia, 'Times New Roman', serif; */
   /* --font-subheading: 'DM Sans Variable', 'DM Sans', system-ui, sans-serif; */
   /* --font-body:       'DM Sans Variable', 'DM Sans', system-ui, sans-serif; */
   /* --font-mono:       'DM Mono', ui-monospace, 'SF Mono', Consolas, monospace; */
 
-  /* --- Typography (DESIGN.md: typography) ----------------------------- */
+  /* --- Typography (typography) ----------------------------- */
   /* --type-h1-size: 2rem;            --type-h1-weight: 400; --type-h1-line: 1.15;  --type-h1-tracking: -0.01em; */
   /* --type-h2-size: 1.5625rem;       --type-h2-weight: 400; --type-h2-line: 1.2;   --type-h2-tracking: -0.005em; */
   /* --type-h3-size: 1.25rem;         --type-h3-weight: 600; --type-h3-line: 1.3;   --type-h3-tracking: -0.01em; */
@@ -66,25 +66,25 @@
   /* --type-p3-size: 0.875rem;        --type-p3-weight: 400; --type-p3-line: 1.45; */
   /* --type-label-size: 0.875rem;     --type-label-weight: 600; --type-label-line: 1.2; --type-label-tracking: 0.01em; */
 
-  /* --- Rounding (DESIGN.md: rounded) ---------------------------------- */
+  /* --- Rounding (rounded) ---------------------------------- */
   /* --rounded-xs:   4px;   --rounded-sm: 6px;  --rounded-md: 8px; */
   /* --rounded-lg:  12px;   --rounded-xl: 16px; --rounded-pill: 999px; */
 
-  /* --- Spacing (DESIGN.md: spacing) ----------------------------------- */
+  /* --- Spacing (spacing) ----------------------------------- */
   /* --spacing-unit: 0.5rem;   --spacing-2xs: 0.25rem; --spacing-xs: 0.5rem; */
   /* --spacing-sm: 0.75rem;    --spacing-md: 1rem;     --spacing-lg: 1.5rem; */
   /* --spacing-xl: 2rem;       --spacing-2xl: 3rem;    --spacing-3xl: 4rem; */
 
-  /* --- Borders (DESIGN.md: borders) ----------------------------------- */
+  /* --- Borders (borders) ----------------------------------- */
   /* --border-width: 1px; --border-width-strong: 2px; */
 
-  /* --- Shadows (DESIGN.md: shadows) ----------------------------------- */
+  /* --- Shadows (shadows) ----------------------------------- */
   /* --shadow-card:    inset 0 1px 0 rgba(255, 255, 255, 0.04); */
   /* --shadow-raised:  0 1px 2px rgba(0, 0, 0, 0.4); */
   /* --shadow-popover: 0 8px 24px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.06); */
   /* --shadow-overlay: 0 24px 64px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.06); */
 
-  /* --- Motion (DESIGN.md: motion) ------------------------------------- */
+  /* --- Motion (motion) ------------------------------------- */
   /* --motion-duration-fast: 120ms; --motion-duration-base: 200ms; --motion-duration-slow: 320ms; */
   /* --motion-ease-standard: cubic-bezier(0.2, 0, 0, 1); */
   /* --motion-ease-enter:    cubic-bezier(0.2, 0.7, 0.2, 1); */

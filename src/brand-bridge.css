@@ -1,6 +1,5 @@
 /* =========================================================================
-   Brand bridge — maps Reseller Ledger's own variable names onto the shared
-   brand tokens (the `brand` package: github.com/mattbloom1/Brand, built from its DESIGN.md).
+   Brand bridge — maps the app's own variable names onto the brand tokens
 
    Do NOT put colour values here.  Re-point a name at a different brand token
    if a role needs to change; change the colour in src/brand/tokens.css.

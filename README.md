@@ -1,7 +1,7 @@
 # eurovan-03
 
 Blank Vite + React + TypeScript project carrying the same styling as the Reseller Ledger:
-shared brand tokens (`brand` package), Instrument Serif / DM Sans / DM Mono fonts,
+brand tokens (src/brand/tokens.css), Instrument Serif / DM Sans / DM Mono fonts,
 the 11th Coolors palette in light and dark themes, and the masthead/shell classes.
 
 ## Run
