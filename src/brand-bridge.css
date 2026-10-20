@@ -3,9 +3,9 @@
    brand tokens (the `brand` package: github.com/mattbloom1/Brand, built from its DESIGN.md).
 
    Do NOT put colour values here.  Re-point a name at a different brand token
-   if a role needs to change; change the colour itself in brand/DESIGN.md.
+   if a role needs to change; change the colour in src/brand/tokens.css.
    ========================================================================= */
-@import 'brand/tokens.css';
+@import './brand/tokens.css';
 
 :root {
   /* Surfaces */

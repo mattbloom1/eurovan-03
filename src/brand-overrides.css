@@ -11,7 +11,7 @@
    - Names follow DESIGN.md: colors.primary -> --color-primary,
      typography.h1 -> --type-h1-*, rounded.md -> --rounded-md, and so on.
      Component tokens (--component-*) live in
-     node_modules/brand/system/generated/tokens.css and work the same way.
+     src/brand/tokens.css and work the same way.
 
    Current values are shown after each line for reference.
    ========================================================================= */
